@@ -1,3 +1,5 @@
+print ("This is a madlibs game.")
+
 name = input("Please enter a name: ").capitalize()
 item = input("Please enter an item: ")
 time = input("Please enter a number between 1 and 12: ")
