@@ -11,7 +11,7 @@ class Employee(object):
 		working_years = today.year - self.employment_date
 		return working_years
 	def __repr__(self):
-		return "Name: %s, Age: %s, Salary: %.3fKD, Working years: %s" % (self.name.title(), self.age, self.salary, self.get_working_years())
+		return "Name: %s, Age: %s, Salary: K.D%.3f, Working years: %s" % (self.name.title(), self.age, self.salary, self.get_working_years())
 	
 
 class Manager(Employee):
@@ -23,7 +23,7 @@ class Manager(Employee):
 		bonus = float(self.bonus_percentage) * int(self.salary)
 		return bonus
 	def __repr__(self):
-		return "Name: %s, Age: %s, Salary: %.3fKD, Working years: %s, Bonus: %.3fKD" % (self.name.title(), self.age, self.salary, self.get_working_years(), self.get_bonus())
+		return "Name: %s, Age: %s, Salary: K.D%.3f, Working years: %s, Bonus: K.D%.3f" % (self.name.title(), self.age, self.salary, self.get_working_years(), self.get_bonus())
 
 emplist = []
 manlist = []
@@ -54,6 +54,8 @@ while True:
 	
 	elif action == "3":
 		print (" ")
+		print("\tTo add an employee, please fill in the following details.")
+		print (" ")
 		name = input("Enter name: ")
 		age = input("Enter age: ")
 		salary = input("Enter salary: ")
@@ -66,6 +68,8 @@ while True:
 	
 	elif action == "4":
 		print (" ")
+		print ("\tTo add a manager, please fill out the following details.")
+		print (" ")
 		name = input("Enter name: ")
 		age = input("Enter age: ")
 		salary = input("Enter salary: ")
@@ -77,7 +81,7 @@ while True:
 		print ("\n\tManager added successfully.\n")
 	
 	elif action == "5":
-		print ("\n\tThank you for using HR pro 2019.\n")
+		print ("\n\tThank you for using HR pro 2019!\n")
 		break
 	else:
 		print ("\n\tInvalid input.\n")
