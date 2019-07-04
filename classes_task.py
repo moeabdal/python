@@ -38,7 +38,7 @@ while True:
 	
 	if action == "1":
 		if len(emplist) == 0:
-			print ("\n\t Please add employee first.\n")
+			print ("\n\tPlease add employee first.\n")
 		else:
 			print (" ")
 			print (emplist)
