@@ -11,7 +11,7 @@ class Employee(object):
 		working_years = today.year - self.employment_date
 		return working_years
 	def __repr__(self):
-		return "Name: %s, Age: %s, Salary: K.D%.3f, Working years: %s" % (self.name.title(), self.age, self.salary, self.get_working_years())
+		return "Name: %s, Age: %s, Salary: %.3f K.D, Working years: %s" % (self.name.title(), self.age, self.salary, self.get_working_years())
 	
 
 class Manager(Employee):
@@ -23,7 +23,7 @@ class Manager(Employee):
 		bonus = float(self.bonus_percentage) * int(self.salary)
 		return bonus
 	def __repr__(self):
-		return "Name: %s, Age: %s, Salary: K.D%.3f, Working years: %s, Bonus: K.D%.3f" % (self.name.title(), self.age, self.salary, self.get_working_years(), self.get_bonus())
+		return "Name: %s, Age: %s, Salary: %.3f K.D, Working years: %s, Bonus: %.3f K.D" % (self.name.title(), self.age, self.salary, self.get_working_years(), self.get_bonus())
 
 emplist = []
 manlist = []
